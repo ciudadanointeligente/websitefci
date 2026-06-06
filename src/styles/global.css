@@ -1,1 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Geologica:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-fci-blue: #0026FF;
+  --color-fci-darkblue: #000F74;
+  --color-fci-mediumblue: #304FFE;
+  --color-fci-lightblue: #74D9F9;
+  --color-fci-purple: #DA00FF;
+  --color-fci-darkpurple: #D500F9;
+  --color-fci-green: #96F67D;
+  --color-fci-darkgreen: #87D972;
+  --color-fci-beige: #F6E9D4;
+  --color-fci-lightgray: #F1F1F4;
+  --color-fci-cream: #F5F4E9;
+  --color-fci-teal: #4ECDC4;
+  --color-fci-yellow: #FFD93D;
+  --font-work-sans: 'Work Sans', sans-serif;
+  --font-space-mono: 'Space Mono', monospace;
+  --font-mulish: 'Mulish', sans-serif;
+  --font-geologica: 'Geologica', sans-serif;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+[x-cloak] {
+  display: none !important;
+}

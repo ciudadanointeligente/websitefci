@@ -1,0 +1,230 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fondoAzul from '../assets/images/fondo-azul.webp';
+import personaVanessa from '../assets/images/persona-vanessa.webp';
+import personaColombina from '../assets/images/persona-colombina.webp';
+import personaAbel from '../assets/images/persona-abel.webp';
+import personaVeronica from '../assets/images/persona-veronica.webp';
+import personaGabrielaLuna from '../assets/images/persona-gabriela-luna.webp';
+import personaJosefina from '../assets/images/persona-josefina.webp';
+import personaFrancisca from '../assets/images/persona-francisca.webp';
+import personaFelipe from '../assets/images/persona-felipe.webp';
+import personaGabrielaC from '../assets/images/persona-gabriela-c.webp';
+import personaJulieta from '../assets/images/persona-julieta.webp';
+import personaLucia from '../assets/images/persona-lucia.webp';
+import personaAlvaro from '../assets/images/persona-alvaro.webp';
+---
+
+<Layout>
+  <section class="relative overflow-hidden" style="background: linear-gradient(180deg, #0026FF 50%, rgba(0, 38, 255, 0.4) 97%);">
+    <img
+      src={fondoAzul.src}
+      alt=""
+      class="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-30"
+    />
+
+    <div class="relative mx-auto max-w-[1440px] px-6 pb-16 pt-12 lg:px-20 lg:pb-24 lg:pt-16">
+      <div class="mb-5">
+        <span class="inline-block rounded bg-fci-lightblue px-5 py-2 font-work-sans text-[14px] font-medium tracking-[0.56px] uppercase text-fci-blue">
+          <a href="/" class="text-fci-blue underline hover:no-underline">Inicio</a> / Nosotros
+        </span>
+      </div>
+
+      <div class="grid gap-8 lg:grid-cols-[1fr_610px]">
+        <div>
+          <h1 class="mb-4 font-work-sans text-[48px] font-black uppercase leading-[1] text-white md:text-[60px]">
+            nosotros
+          </h1>
+          <p class="max-w-[934px] font-work-sans text-[16px] leading-relaxed text-white md:text-[20px]">
+            Somos una organización latinoamericana sin fines de lucro. Impulsamos cambios concretos: <strong class="text-fci-purple">formamos ciudadanía, acompañamos gobiernos locales, desarrollamos herramientas digitales, construimos alianzas diversas e investigamos amenazas a la democracia</strong> para proponer soluciones que descentralicen el poder y activen la participación
+          </p>
+        </div>
+        <div class="flex items-center">
+          <p class="font-work-sans text-[20px] font-medium leading-snug text-white md:text-[24px]">
+            <strong>Más de 15 años haciendo de la democracia</strong> <span class="text-fci-green">una experiencia compartida, justa y transformadora</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="mx-auto max-w-[1440px] px-6 py-16 lg:px-20">
+      <h2 class="mb-8 text-center">
+        <span class="font-work-sans text-[20px] font-medium uppercase text-fci-mediumblue md:text-[24px]">Nuestros</span>
+        <br />
+        <span class="font-work-sans text-[32px] font-black uppercase text-fci-mediumblue md:text-[38px]">valores</span>
+      </h2>
+
+      <div class="flex flex-wrap justify-center gap-3">
+        <span class="rounded bg-fci-green px-6 py-3 font-work-sans text-[22px] font-medium text-[#334FFF] md:text-[25px]">Transparencia</span>
+        <span class="rounded bg-fci-green px-6 py-3 font-work-sans text-[22px] font-medium text-[#334FFF] md:text-[25px]">Participación</span>
+        <span class="rounded bg-fci-green px-6 py-3 font-work-sans text-[22px] font-medium text-[#334FFF] md:text-[25px]">Información</span>
+        <span class="rounded bg-fci-green px-6 py-3 font-work-sans text-[22px] font-medium text-[#334FFF] md:text-[25px]">Colaboración</span>
+        <span class="rounded bg-fci-green px-6 py-3 font-work-sans text-[22px] font-medium text-[#334FFF] md:text-[25px]">Enfoque regional</span>
+        <span class="rounded bg-fci-green px-6 py-3 font-work-sans text-[22px] font-medium text-[#334FFF] md:text-[25px]">Democracia Ambiental</span>
+        <span class="rounded bg-fci-green px-6 py-3 font-work-sans text-[22px] font-medium text-[#334FFF] md:text-[25px]">Innovación</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="mx-auto max-w-[1440px] px-6 pb-16 lg:px-20" x-data="{ activeTab: 'mision' }">
+      <div class="flex flex-wrap gap-4">
+        <button
+          class="inline-flex h-[52px] items-center justify-center rounded px-8 font-work-sans text-[24px] font-bold text-white transition-colors"
+          :class="activeTab === 'mision' ? 'bg-fci-darkpurple' : 'bg-fci-purple opacity-70'"
+          @click="activeTab = 'mision'"
+        >
+          Nuestra Misión
+        </button>
+        <button
+          class="inline-flex h-[41px] items-center justify-center rounded px-8 font-work-sans text-[24px] font-bold text-white transition-colors"
+          :class="activeTab === 'vision' ? 'bg-fci-darkpurple' : 'bg-fci-purple opacity-70'"
+          @click="activeTab = 'vision'"
+         >
+          Nuestra Visión
+        </button>
+      </div>
+
+      <div class="mt-10 max-w-3xl">
+        <div x-show="activeTab === 'mision'">
+          <p class="font-work-sans text-[18px] leading-relaxed text-black md:text-[20px]">
+            Trabajamos para transformar la política a través de la acción colectiva, la información accesible, el trabajo territorial y la colaboración con actores diversos.
+          </p>
+        </div>
+        <div x-show="activeTab === 'vision'">
+          <p class="font-work-sans text-[18px] leading-relaxed text-black md:text-[20px]">
+            Trabajamos por lograr una región con ciudadanía informada y organizada, sociedad civil fuerte, instituciones abiertas, y una política que proteja la vida en común y la sostenibilidad del planeta.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="mx-auto max-w-[1440px] px-6 pb-16 lg:px-20">
+      <h2 class="mb-2 text-center">
+        <span class="font-work-sans text-[20px] font-medium uppercase text-fci-mediumblue md:text-[24px]">Nuestro</span>
+        <br />
+        <span class="font-work-sans text-[32px] font-black uppercase text-fci-mediumblue md:text-[38px]">directorio</span>
+      </h2>
+      <p class="mx-auto mb-12 max-w-3xl text-center font-work-sans text-[16px] leading-relaxed text-[#373737] md:text-[18px]">
+        Nuestro directorio está conformado por personas con amplia experiencia en democracia, derechos humanos y sociedad civil, que orientan estratégicamente nuestro trabajo.
+      </p>
+
+      <div class="flex justify-center gap-8">
+        <article class="flex w-[380px] flex-col items-center text-center">
+          <img src={personaJulieta.src} alt="Julieta Suárez Cao" class="h-[188px] w-[188px] rounded-full object-cover" loading="lazy" />
+          <div class="-mt-3 w-full rounded-[28.6px] bg-white px-3 pb-4 pt-8 shadow-[0px_5.72px_9.53px_3.81px_rgba(0,0,0,0.15)]">
+            <h3 class="font-space-mono text-[19px] leading-tight text-fci-purple">Julieta Suárez Cao</h3>
+            <p class="mt-1 font-work-sans text-[19px] font-medium text-black">Vicepresidenta</p>
+          </div>
+        </article>
+
+        <article class="flex w-[380px] flex-col items-center text-center">
+          <img src={personaLucia.src} alt="Lucía Dammert" class="h-[188px] w-[188px] rounded-full object-cover" loading="lazy" />
+          <div class="-mt-3 w-full rounded-[28.6px] bg-white px-3 pb-4 pt-8 shadow-[0px_5.72px_9.53px_3.81px_rgba(0,0,0,0.15)]">
+            <h3 class="font-space-mono text-[19px] leading-tight text-fci-purple">Lucía Dammert</h3>
+            <p class="mt-1 font-work-sans text-[19px] font-medium text-black">Directora</p>
+          </div>
+        </article>
+
+        <article class="flex w-[380px] flex-col items-center text-center">
+          <img src={personaAlvaro.src} alt="Álvaro Ramírez" class="h-[188px] w-[188px] rounded-full object-cover" loading="lazy" />
+          <div class="-mt-3 w-full rounded-[28.6px] bg-white px-3 pb-4 pt-8 shadow-[0px_5.72px_9.53px_3.81px_rgba(0,0,0,0.15)]">
+            <h3 class="font-space-mono text-[19px] leading-tight text-fci-purple">Álvaro Ramírez</h3>
+            <p class="mt-1 font-work-sans text-[19px] font-medium text-black">Director</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="mx-auto max-w-[1440px] px-6 pb-20 lg:px-20">
+      <h2 class="mb-2 text-center">
+        <span class="font-work-sans text-[20px] font-medium uppercase text-fci-mediumblue md:text-[24px]">Nuestro</span>
+        <br />
+        <span class="font-work-sans text-[32px] font-black uppercase text-fci-mediumblue md:text-[38px]">equipo ejecutivo</span>
+      </h2>
+      <p class="mx-auto mb-12 max-w-3xl text-center font-work-sans text-[16px] leading-relaxed text-[#373737] md:text-[18px]">
+        Un equipo multidisciplinario de profesionales y activistas comprometidos con la transformación democrática desde el territorio, la investigación y la incidencia política.
+      </p>
+
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="flex flex-col items-center text-center">
+          <img src={personaVanessa.src} alt="Vanessa González" class="h-[189px] w-[189px] rounded-full object-cover" loading="lazy" />
+          <div class="-mt-3 w-full rounded-[29.49px] bg-white px-3 pb-4 pt-8 shadow-[0px_5.9px_9.83px_3.93px_rgba(0,0,0,0.15)]">
+            <h3 class="font-space-mono text-[19px] leading-tight text-fci-purple">Vanessa González</h3>
+            <p class="mt-1 font-work-sans text-[17px] font-medium text-black">Coordinadora General</p>
+          </div>
+        </article>
+
+        <article class="flex flex-col items-center text-center">
+          <img src={personaColombina.src} alt="Colombina Schaeffer" class="h-[189px] w-[189px] rounded-full object-cover" loading="lazy" />
+          <div class="-mt-3 w-full rounded-[29.49px] bg-white px-3 pb-4 pt-8 shadow-[0px_5.9px_9.83px_3.93px_rgba(0,0,0,0.15)]">
+            <h3 class="font-space-mono text-[19px] leading-tight text-fci-purple">Colombina Schaeffer</h3>
+            <p class="mt-1 font-work-sans text-[17px] font-medium text-black">Directora Ejecutiva Subrogante</p>
+          </div>
+        </article>
+
+        <article class="flex flex-col items-center text-center">
+          <img src={personaAbel.src} alt="Abel Escobar" class="h-[189px] w-[189px] rounded-full object-cover" loading="lazy" />
+          <div class="-mt-3 w-full rounded-[29.49px] bg-white px-3 pb-4 pt-8 shadow-[0px_5.9px_9.83px_3.93px_rgba(0,0,0,0.15)]">
+            <h3 class="font-space-mono text-[19px] leading-tight text-fci-purple">Abel Escobar</h3>
+            <p class="mt-1 font-work-sans text-[17px] font-medium text-black">Coordinador Laboratorio de Diseño, Desarrollo y Experiencia</p>
+          </div>
+        </article>
+
+        <article class="flex flex-col items-center text-center">
+          <img src={personaVeronica.src} alt="Verónica Maldonado" class="h-[189px] w-[189px] rounded-full object-cover" loading="lazy" />
+          <div class="-mt-3 w-full rounded-[29.49px] bg-white px-3 pb-4 pt-8 shadow-[0px_5.9px_9.83px_3.93px_rgba(0,0,0,0.15)]">
+            <h3 class="font-space-mono text-[19px] leading-tight text-fci-purple">Verónica Maldonado</h3>
+            <p class="mt-1 font-work-sans text-[17px] font-medium text-black">Coordinadora de Administración y Finanzas</p>
+          </div>
+        </article>
+
+        <article class="flex flex-col items-center text-center">
+          <img src={personaGabrielaLuna.src} alt="Gabriela Luna Barraza" class="h-[189px] w-[189px] rounded-full object-cover" loading="lazy" />
+          <div class="-mt-3 w-full rounded-[29.49px] bg-white px-3 pb-4 pt-8 shadow-[0px_5.9px_9.83px_3.93px_rgba(0,0,0,0.15)]">
+            <h3 class="font-space-mono text-[19px] leading-tight text-fci-purple">Gabriela Luna Barraza</h3>
+            <p class="mt-1 font-work-sans text-[17px] font-medium text-black">Coordinadora de proyectos e Investigación</p>
+          </div>
+        </article>
+
+        <article class="flex flex-col items-center text-center">
+          <img src={personaJosefina.src} alt="Josefina Correa Pérez" class="h-[189px] w-[189px] rounded-full object-cover" loading="lazy" />
+          <div class="-mt-3 w-full rounded-[29.49px] bg-white px-3 pb-4 pt-8 shadow-[0px_5.9px_9.83px_3.93px_rgba(0,0,0,0.15)]">
+            <h3 class="font-space-mono text-[19px] leading-tight text-fci-purple">Josefina Correa Pérez</h3>
+            <p class="mt-1 font-work-sans text-[17px] font-medium text-black">Consultora de Incidencia</p>
+          </div>
+        </article>
+
+        <article class="flex flex-col items-center text-center">
+          <img src={personaFrancisca.src} alt="Francisca Valenzuela" class="h-[189px] w-[189px] rounded-full object-cover" loading="lazy" />
+          <div class="-mt-3 w-full rounded-[29.49px] bg-white px-3 pb-4 pt-8 shadow-[0px_5.9px_9.83px_3.93px_rgba(0,0,0,0.15)]">
+            <h3 class="font-space-mono text-[19px] leading-tight text-fci-purple">Francisca Valenzuela</h3>
+            <p class="mt-1 font-work-sans text-[17px] font-medium text-black">Coordinadora de comunicaciones</p>
+          </div>
+        </article>
+
+        <article class="flex flex-col items-center text-center">
+          <img src={personaFelipe.src} alt="Felipe Perry" class="h-[189px] w-[189px] rounded-full object-cover" loading="lazy" />
+          <div class="-mt-3 w-full rounded-[29.49px] bg-white px-3 pb-4 pt-8 shadow-[0px_5.9px_9.83px_3.93px_rgba(0,0,0,0.15)]">
+            <h3 class="font-space-mono text-[19px] leading-tight text-fci-purple">Felipe Perry</h3>
+            <p class="mt-1 font-work-sans text-[17px] font-medium text-black">Desarrollador</p>
+          </div>
+        </article>
+
+        <article class="flex flex-col items-center text-center">
+          <img src={personaGabrielaC.src} alt="Gabriela Cabañas" class="h-[189px] w-[189px] rounded-full object-cover" loading="lazy" />
+          <div class="-mt-3 w-full rounded-[29.49px] bg-white px-3 pb-4 pt-8 shadow-[0px_5.9px_9.83px_3.93px_rgba(0,0,0,0.15)]">
+            <h3 class="font-space-mono text-[19px] leading-tight text-fci-purple">Gabriela Cabañas</h3>
+            <p class="mt-1 font-work-sans text-[17px] font-medium text-black">Coordinadora de proyectos e Investigación</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</Layout>

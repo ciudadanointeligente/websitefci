@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fondoAzul from '../assets/images/fondo-azul.webp';
+---
+
+<Layout>
+  <section class="relative overflow-hidden" style="background: linear-gradient(180deg, #0026FF 50%, rgba(0, 38, 255, 0.4) 97%);">
+    <img
+      src={fondoAzul.src}
+      alt=""
+      class="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-30"
+    />
+
+    <div class="relative mx-auto max-w-[1440px] px-6 pb-16 pt-12 lg:px-20 lg:pb-24 lg:pt-16">
+      <div class="mb-5">
+        <span class="inline-block rounded bg-fci-lightblue px-5 py-2 font-work-sans text-[14px] font-medium tracking-[0.56px] uppercase text-fci-blue">
+          <a href="/" class="text-fci-blue underline hover:no-underline">Inicio</a> / contacto
+        </span>
+      </div>
+
+      <div class="grid gap-8 lg:grid-cols-[1fr_610px]">
+        <div>
+          <h1 class="mb-4 font-work-sans text-[48px] font-black uppercase leading-[1] text-white md:text-[60px]">
+            contacto
+          </h1>
+        </div>
+        <div class="flex items-center">
+          <p class="font-work-sans text-[20px] font-medium leading-snug text-white md:text-[24px]">
+            <strong>¿Quieres sumarte, colaborar o escribirnos?</strong> <span class="text-fci-green">Aquí tienes todas las formas de ponerte en contacto con Ciudadanía Inteligente.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="mx-auto max-w-[1440px] px-6 py-16 lg:px-20 lg:py-28">
+      <h2 class="text-center font-work-sans text-[32px] font-extrabold uppercase text-fci-mediumblue md:text-[40px]">
+        ¿Quieres sumarte, colaborar o escribirnos?
+      </h2>
+      <p class="mt-4 text-center font-work-sans text-[16px] leading-relaxed text-[#373737] md:text-[20px]">
+        Aquí tienes todas las formas de ponerte en contacto con Ciudadanía Inteligente:
+      </p>
+
+      <div class="mt-16 grid grid-cols-1 gap-16 lg:grid-cols-2">
+        <div class="text-center">
+          <h3 class="mb-4 font-work-sans text-[35px] font-bold text-fci-darkpurple">
+            Escríbenos
+          </h3>
+          <p class="font-space-mono text-[18px] leading-[158%] text-black md:text-[20px]">
+            ¿Tienes dudas, propuestas o ideas para colaborar?<br />
+            Escríbenos a <a href="mailto:info@ciudadaniai.org" class="font-bold text-[#334FFF] underline hover:text-fci-blue">info@ciudadaniai.org</a>
+          </p>
+        </div>
+
+        <div class="text-center lg:text-left">
+          <span class="inline-flex h-[52px] items-center justify-center rounded bg-fci-darkpurple px-8 font-work-sans text-[24px] font-bold text-white">
+            Voluntariado y pasantias
+          </span>
+          <p class="mt-4 font-work-sans text-[16px] leading-[148%] text-black md:text-[20px]">
+            Sé parte de nuestro equipo y aporta a la transformación democrática desde adentro.
+          </p>
+          <a
+            href="#"
+            class="mt-6 inline-flex items-center rounded-full bg-fci-blue px-6 py-3 font-work-sans text-[18.8px] font-bold uppercase text-white transition-colors hover:bg-fci-darkblue"
+          >
+            Postula aquí
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

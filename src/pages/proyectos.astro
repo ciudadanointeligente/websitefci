@@ -1,0 +1,128 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fondoAzul from '../assets/images/fondo-azul.webp';
+import logoTransparentes from '../assets/images/logo-transparentes.webp';
+import logoChileleaks from '../assets/images/logo-chileleaks.webp';
+---
+
+<Layout>
+  <section class="relative overflow-hidden" style="background: linear-gradient(180deg, #0026FF 50%, rgba(0, 38, 255, 0.4) 97%);">
+    <img
+      src={fondoAzul.src}
+      alt=""
+      class="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-30"
+    />
+
+    <div class="relative mx-auto max-w-[1440px] px-6 pb-16 pt-12 lg:px-20 lg:pb-24 lg:pt-16">
+      <div class="mb-5">
+        <span class="inline-block rounded bg-fci-lightblue px-5 py-2 font-work-sans text-[14px] font-medium tracking-[0.56px] uppercase text-fci-blue">
+          <a href="/" class="text-fci-blue underline hover:no-underline">Inicio</a> / proyectos
+        </span>
+      </div>
+
+      <div class="grid gap-8 lg:grid-cols-[1fr_647px]">
+        <div>
+          <h1 class="mb-4 font-work-sans text-[48px] font-black uppercase leading-[1] text-white md:text-[60px]">
+            proyectos
+          </h1>
+        </div>
+        <div class="flex items-center">
+          <p class="font-work-sans text-[20px] font-bold leading-snug text-white md:text-[24px]">
+            Impulsamos proyectos que abren caminos para una democracia más justa y participativa. <span class="font-medium text-fci-green">Lo hacemos con comunidades y organizaciones, combinando innovación, trabajo territorial y colaboración regional.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="mx-auto max-w-[1440px] px-6 py-10 lg:px-20">
+      <div class="flex flex-wrap items-center gap-4">
+        <span class="font-work-sans text-[20px] font-bold text-fci-blue">Filtrar por:</span>
+        <button class="inline-flex items-center gap-2 rounded-[6px] bg-fci-green px-5 py-2 font-work-sans text-[16px] text-black">
+          Temática
+          <svg width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M1 1L7 7L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="inline-flex items-center gap-2 rounded-[6px] bg-fci-green px-5 py-2 font-work-sans text-[16px] text-black">
+          Región
+          <svg width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M1 1L7 7L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="inline-flex items-center gap-2 rounded-[6px] bg-fci-green px-5 py-2 font-work-sans text-[16px] text-black">
+          Estatus
+          <svg width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M1 1L7 7L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="mx-auto max-w-[1440px] px-6 pb-20 lg:px-20">
+      <h2 class="mb-10 text-center font-work-sans text-[32px] font-extrabold uppercase text-fci-mediumblue md:text-[40px]">
+        nuestros proyectos
+      </h2>
+
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <a href="/proyectos/colectiva" class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-[#373737] p-6 transition-transform hover:scale-[1.02]">
+          <div class="relative z-10">
+            <h3 class="font-work-sans text-[32px] font-bold text-white">Colectiva</h3>
+          </div>
+        </a>
+
+        <a href="/proyectos/ayuda-defensores" class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-fci-beige p-6 transition-transform hover:scale-[1.02]">
+          <div class="relative z-10">
+            <h3 class="font-geologica text-[58px] font-black leading-none text-[#655846]">Ayuda</h3>
+            <h3 class="font-geologica text-[30px] font-black leading-none text-[#D06B28]">Defensores</h3>
+          </div>
+        </a>
+
+        <a href="/proyectos/democracia-kit" class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-fci-darkblue p-6 transition-transform hover:scale-[1.02]">
+          <div class="relative z-10">
+            <h3 class="font-space-mono text-[36px] font-bold leading-none text-fci-lightblue">Democracia</h3>
+            <h3 class="font-space-mono text-[36px] font-bold leading-none text-fci-lightblue">Kit</h3>
+          </div>
+        </a>
+
+        <a href="/proyectos/dicho-al-hecho" class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-fci-teal p-6 transition-transform hover:scale-[1.02]">
+          <div class="relative z-10">
+            <h3 class="font-work-sans text-[28px] font-bold leading-tight text-white">del Dicho al Hecho</h3>
+          </div>
+        </a>
+
+        <a href="/proyectos/abre-alcaldias" class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-fci-darkpurple p-6 transition-transform hover:scale-[1.02]">
+          <div class="relative z-10">
+            <h3 class="font-space-mono text-[36px] font-bold leading-none text-white">AbreAlcaldías&lt;</h3>
+          </div>
+        </a>
+
+        <a href="#" class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-fci-green p-6 transition-transform hover:scale-[1.02]">
+          <div class="relative z-10">
+            <h3 class="font-work-sans text-[24px] font-bold leading-tight text-[#000F74]">Acción</h3>
+            <h3 class="font-work-sans text-[32px] font-bold leading-tight text-[#000F74]">Climática</h3>
+            <p class="mt-1 font-work-sans text-[14px] text-[#000F74]/70">del dicho al hecho</p>
+          </div>
+        </a>
+
+        <a href="#" class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-fci-lightgray p-6 transition-transform hover:scale-[1.02]">
+          <div class="relative z-10">
+            <h3 class="font-work-sans text-[18px] font-bold uppercase leading-tight text-black">La Constitución</h3>
+            <h3 class="font-work-sans text-[32px] font-bold uppercase leading-tight text-black">es NUESTRA</h3>
+          </div>
+        </a>
+
+        <a href="/proyectos/chileleaks" class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-fci-yellow p-6 transition-transform hover:scale-[1.02]">
+          <div class="relative z-10 flex flex-col gap-4">
+            <h3 class="font-work-sans text-[28px] font-bold text-[#373737]">Chileleaks</h3>
+            <img src={logoChileleaks.src} alt="Chileleaks" class="h-[24px] w-auto" loading="lazy" />
+          </div>
+        </a>
+
+        <a href="/proyectos/transparentes" class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-fci-cream p-6 transition-transform hover:scale-[1.02]">
+          <div class="relative z-10 flex flex-col gap-4">
+            <h3 class="font-work-sans text-[28px] font-bold text-black">Transparentes</h3>
+            <img src={logoTransparentes.src} alt="Transparentes" class="h-[28px] w-auto" loading="lazy" />
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
