@@ -8,12 +8,12 @@ import noticia2025 from '../assets/images/noticia-2025.webp';
 
 <Layout>
   <!-- Hero: Fondo blanco con líneas decorativas -->
-  <section class="relative flex min-h-220 items-center justify-center overflow-hidden bg-white">
+  <section class="relative flex min-h-[880px] items-center justify-center overflow-hidden bg-white">
     <!-- Líneas decorativas de fondo (mapa abstracto) -->
     <img
       src={fondoAzul.src}
       alt=""
-      class="pointer-events-none absolute -top-13 left-1/2 h-244.5 w-full max-w-703 -translate-x-1/2 object-cover opacity-40"
+      class="pointer-events-none absolute -top-[52px] left-1/2 h-[978px] w-full max-w-[2812px] -translate-x-1/2 object-cover opacity-40"
     />
 
     <div class="relative mx-auto max-w-[360] px-6 text-center lg:px-20">
@@ -30,24 +30,24 @@ import noticia2025 from '../assets/images/noticia-2025.webp';
   </section>
 
   <!-- Sección Azul con mapa de América Latina -->
-  <section class="relative h-128 overflow-hidden bg-fci-blue">
+  <section class="relative h-[512px] overflow-hidden bg-fci-blue">
     <!-- Mapa de América Latina a la derecha -->
     <img
       src="/images/mapa-latam.svg"
       alt=""
-      class="pointer-events-none absolute right-0 top-0 h-201.75 w-201.25 opacity-30"
+      class="pointer-events-none absolute right-0 top-0 h-[807px] w-[805px] opacity-30"
     />
 
-    <div class="relative mx-auto flex h-full max-w-360 flex-col justify-center px-6 lg:px-20">
-      <div class="max-w-207">
-        <p class="font-work-sans text-[30px] font-normal leading-10.25 text-white">
+    <div class="relative mx-auto flex h-full max-w-[1440px] flex-col justify-center px-6 lg:px-20">
+      <div class="max-w-[828px]">
+        <p class="font-work-sans text-[30px] font-normal leading-[41px] text-white">
           Trabajamos en América Latina y el Caribe desarrollando herramientas y estrategias para fortalecer <strong class="font-extrabold text-fci-green">la participación ciudadana, la transparencia y la incidencia pública</strong>.
         </p>
 
         <div class="mt-12">
           <a
             href="/nosotros"
-            class="inline-flex h-10.5 w-33.5 items-center justify-center rounded-full bg-white font-work-sans text-base font-extrabold uppercase text-fci-blue transition-colors hover:bg-gray-100"
+            class="inline-flex h-[42px] w-[134px] items-center justify-center rounded-full bg-white font-work-sans text-base font-extrabold uppercase text-fci-blue transition-colors hover:bg-gray-100"
           >
             Nosotros
           </a>
@@ -58,23 +58,26 @@ import noticia2025 from '../assets/images/noticia-2025.webp';
 
   <!-- Sección Proyectos -->
   <section class="bg-white">
-    <div class="mx-auto max-w-360 px-6 py-20 lg:px-20">
+    <div class="mx-auto max-w-[1440px] px-6 py-20 lg:px-20">
       <h2 class="mb-10 text-center font-work-sans text-[32px] font-extrabold uppercase text-fci-blue md:text-[40px]">
         nuestros proyectos
       </h2>
 
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="group relative flex min-h-71.75 items-end overflow-hidden rounded-lg bg-[#373737] p-6 transition-transform hover:scale-[1.02]">
-          
+        <a href="/proyectos/colectiva" class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-[#373737] p-6 transition-transform hover:scale-[1.02]">
+          <div class="relative z-10">
+            <h3 class="font-work-sans text-[32px] font-bold text-white">Colectiva</h3>
+          </div>
+        </a>
 
-        <article class="group relative flex min-h-71.75 items-end overflow-hidden rounded-lg bg-fci-beige p-6 transition-transform hover:scale-[1.02]">
+        <article class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-fci-beige p-6 transition-transform hover:scale-[1.02]">
           <div class="relative z-10">
             <h3 class="font-geologica text-[58px] font-black leading-none text-[#655846]">Ayuda</h3>
             <h3 class="font-geologica text-[30px] font-black leading-none text-[#D06B28]">Defensores</h3>
           </div>
         </article>
 
-        <article class="group relative flex min-h-71.75 items-end overflow-hidden rounded-lg bg-fci-darkblue p-6 transition-transform hover:scale-[1.02]">
+        <article class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-fci-darkblue p-6 transition-transform hover:scale-[1.02]">
           <div class="relative z-10">
             <h3 class="font-space-mono text-[36px] font-bold leading-none text-fci-lightblue">Democracia</h3>
             <h3 class="font-space-mono text-[36px] font-bold leading-none text-fci-lightblue">Kit</h3>
@@ -95,7 +98,7 @@ import noticia2025 from '../assets/images/noticia-2025.webp';
 
   <!-- Sección Novedades -->
   <section class="bg-white">
-    <div class="mx-auto max-w-360 px-6 py-20 lg:px-20">
+    <div class="mx-auto max-w-[1440px] px-6 py-20 lg:px-20">
       <div class="mb-12 flex flex-col items-center justify-between gap-4 md:flex-row">
         <div class="text-center md:text-left">
           <p class="font-work-sans text-[20px] font-medium uppercase text-fci-blue md:text-[24px]">revisa nuestras</p>
@@ -111,7 +114,7 @@ import noticia2025 from '../assets/images/noticia-2025.webp';
 
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
         <article class="flex flex-col overflow-hidden rounded-[20px] bg-[rgba(0,38,255,0.08)] transition-transform hover:scale-[1.02]">
-          <img src={noticiaEscazu.src} alt="Escazú Barómetro" class="h-71.75 w-full rounded-[10px] object-cover" loading="lazy" />
+          <img src={noticiaEscazu.src} alt="Escazú Barómetro" class="h-[287px] w-full rounded-[10px] object-cover" loading="lazy" />
           <div class="flex flex-1 flex-col justify-between p-6">
             <div>
               <span class="inline-block rounded bg-fci-lightblue px-3 py-1 font-work-sans text-[14px] font-medium uppercase tracking-[0.04em] text-fci-blue">actualidad</span>
@@ -126,7 +129,7 @@ import noticia2025 from '../assets/images/noticia-2025.webp';
         </article>
 
         <article class="flex flex-col overflow-hidden rounded-[20px] bg-[rgba(0,38,255,0.08)] transition-transform hover:scale-[1.02]">
-          <img src={noticiaPenalolen.src} alt="Taller Peñalolén" class="h-71.75 w-full rounded-[10px] object-cover" loading="lazy" />
+          <img src={noticiaPenalolen.src} alt="Taller Peñalolén" class="h-[287px] w-full rounded-[10px] object-cover" loading="lazy" />
           <div class="flex flex-1 flex-col justify-between p-6">
             <div>
               <span class="inline-block rounded bg-fci-lightblue px-3 py-1 font-work-sans text-[14px] font-medium uppercase tracking-[0.04em] text-fci-blue">actualidad</span>
@@ -141,7 +144,7 @@ import noticia2025 from '../assets/images/noticia-2025.webp';
         </article>
 
         <article class="flex flex-col overflow-hidden rounded-[20px] bg-[rgba(0,38,255,0.08)] transition-transform hover:scale-[1.02]">
-          <img src={noticia2025.src} alt="2025 en Ciudadanía Inteligente" class="h-71.75 w-full rounded-[10px] object-cover" loading="lazy" />
+          <img src={noticia2025.src} alt="2025 en Ciudadanía Inteligente" class="h-[287px] w-full rounded-[10px] object-cover" loading="lazy" />
           <div class="flex flex-1 flex-col justify-between p-6">
             <div>
               <span class="inline-block rounded bg-fci-lightblue px-3 py-1 font-work-sans text-[14px] font-medium uppercase tracking-[0.04em] text-fci-blue">actualidad</span>

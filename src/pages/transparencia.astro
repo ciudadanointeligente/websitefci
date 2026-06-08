@@ -15,7 +15,7 @@ import logoKaribu from '../assets/images/logo-karibu.webp';
 ---
 
 <Layout>
-  <section class="relative overflow-hidden" style="background: linear-gradient(180deg, #0026FF 50%, rgba(0, 38, 255, 0.4) 97%);">
+  <section class="relative -mt-[15px] z-0 overflow-hidden bg-fci-blue">
     <div class="relative mx-auto max-w-[1440px] px-6 pb-16 pt-12 lg:px-20 lg:pb-24 lg:pt-16">
       <div class="mb-5">
         <span class="inline-block rounded bg-fci-lightblue px-5 py-2 font-work-sans text-[14px] font-medium tracking-[0.56px] uppercase text-fci-blue">
@@ -55,7 +55,7 @@ import logoKaribu from '../assets/images/logo-karibu.webp';
   </section>
 
   <section class="bg-white">
-    <div class="mx-auto max-w-[1440px] px-6 py-16 lg:px-20">
+    <div class="mx-auto max-w-[1440px] px-6 py-16 lg:px-20" x-data="{ activeTab: 'memorias' }">
       <h2 class="text-center font-work-sans text-[32px] font-extrabold uppercase text-fci-mediumblue md:text-[40px]">
         Reportes anuales
       </h2>
@@ -63,40 +63,7 @@ import logoKaribu from '../assets/images/logo-karibu.webp';
         Accede a nuestras memorias y otros documentos importantes de nuestra gestión.
       </p>
 
-      <div class="mt-10 grid gap-8 lg:grid-cols-[220px_1fr]">
-        <div>
-          <div class="flex items-center gap-2">
-            <span class="font-work-sans text-[20px] font-bold text-black">Filtrar por:</span>
-          </div>
-          <div class="mt-3 inline-flex items-center gap-2 rounded-[6px] bg-fci-green px-4 py-2">
-            <span class="font-work-sans text-[16px] text-black">Año</span>
-            <svg width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M1 1L7 7L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-        </div>
-
-        <div class="columns-2 space-y-3">
-          <a href="https://ciudadaniai.org/assets/attachments/memoria_fci-2023.pdf" class="block font-space-mono text-[18px] text-[#334FFF] underline transition-colors hover:text-fci-blue md:text-[20px]">Memoria 2023</a>
-          <a href="https://ciudadaniai.org/assets/attachments/memoria_fci-2022.pdf" class="block font-space-mono text-[18px] text-[#334FFF] underline transition-colors hover:text-fci-blue md:text-[20px]">Memoria 2022</a>
-          <a href="https://ciudadaniai.org/assets/attachments/memoria_fci-2021.pdf" class="block font-space-mono text-[18px] text-[#334FFF] underline transition-colors hover:text-fci-blue md:text-[20px]">Memoria 2021</a>
-          <a href="https://ciudadaniai.org/assets/attachments/memoria_fci_2020.pdf" class="block font-space-mono text-[18px] text-[#334FFF] underline transition-colors hover:text-fci-blue md:text-[20px]">Memoria 2020</a>
-          <a href="https://drive.google.com/file/d/1qNzq4byMuaICKbZ4fpWoAhSjEMAsv-64/view?usp=sharing" class="block font-space-mono text-[18px] text-[#334FFF] underline transition-colors hover:text-fci-blue md:text-[20px]">Memoria 2019</a>
-          <a href="https://ciudadaniai.org/assets/attachments/memoria_ciudadaniai_2018.pdf" class="block font-space-mono text-[18px] text-[#334FFF] underline transition-colors hover:text-fci-blue md:text-[20px]">Memoria 2018</a>
-          <a href="https://ciudadaniai.org/assets/attachments/memoria_fci-2017.pdf" class="block font-space-mono text-[18px] text-[#334FFF] underline transition-colors hover:text-fci-blue md:text-[20px]">Memoria 2017</a>
-          <a href="https://drive.google.com/file/d/1EvRXPz1Y_zMjCDk5eO5tuVfWTAYpvGR3/view?usp=sharing" class="block font-space-mono text-[18px] text-[#334FFF] underline transition-colors hover:text-fci-blue md:text-[20px]">Memoria 2016</a>
-          <a href="https://drive.google.com/file/d/1zjuWsPfRm6jDBX37LZupKzz7J_Fwl_S0/view?usp=sharing" class="block font-space-mono text-[18px] text-[#334FFF] underline transition-colors hover:text-fci-blue md:text-[20px]">Memoria 2015</a>
-          <a href="https://drive.google.com/file/d/1hicIQKKpTjye60v_CIPIj4u8YKSaGoxd/view?usp=sharing" class="block font-space-mono text-[18px] text-[#334FFF] underline transition-colors hover:text-fci-blue md:text-[20px]">Memoria 2014</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-white">
-    <div class="mx-auto max-w-[1440px] px-6 pb-16 lg:px-20" x-data="{ activeTab: 'memorias' }">
-      <h2 class="mb-8 text-center font-work-sans text-[32px] font-extrabold uppercase text-fci-mediumblue md:text-[40px]">
-        Quiénes apoyan nuestro trabajo
-      </h2>
-
-      <div class="flex flex-wrap gap-4">
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
         <button
           class="inline-flex h-[52px] items-center justify-center rounded px-6 font-work-sans text-[27px] font-bold text-white transition-colors"
           :class="activeTab === 'memorias' ? 'bg-fci-darkpurple' : 'bg-fci-purple opacity-70'"
@@ -134,6 +101,14 @@ import logoKaribu from '../assets/images/logo-karibu.webp';
           <a href="https://ciudadaniai.org/assets/attachments/estatutos-FCI.pdf" class="block font-space-mono text-[18px] text-[#334FFF] underline transition-colors hover:text-fci-blue md:text-[20px]">Nuestros estatutos</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="mx-auto max-w-[1440px] px-6 pb-16 lg:px-20">
+      <h2 class="mb-8 text-center font-work-sans text-[32px] font-extrabold uppercase text-fci-mediumblue md:text-[40px]">
+        Quiénes apoyan nuestro trabajo
+      </h2>
     </div>
   </section>
 
