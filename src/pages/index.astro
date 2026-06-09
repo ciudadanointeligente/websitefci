@@ -8,46 +8,46 @@ import noticia2025 from '../assets/images/noticia-2025.webp';
 
 <Layout>
   <!-- Hero: Fondo blanco con líneas decorativas -->
-  <section class="relative flex min-h-[880px] items-center justify-center overflow-hidden bg-white">
+  <section class="relative flex min-h-100 items-center justify-center overflow-hidden bg-white md:min-h-160">
     <!-- Líneas decorativas de fondo (mapa abstracto) -->
     <img
       src={fondoAzul.src}
       alt=""
-      class="pointer-events-none absolute -top-[52px] left-1/2 h-[978px] w-full max-w-[2812px] -translate-x-1/2 object-cover opacity-40"
+      class="pointer-events-none absolute -top-13 left-1/2 h-244.5 w-full max-w-703 -translate-x-1/2 object-cover opacity-50"
     />
 
-    <div class="relative mx-auto max-w-[1440px] px-6 text-center lg:px-20">
-      <h1 class="font-work-sans text-[42px] font-bold text-fci-blue md:text-[49px]">
+<div class="relative mx-auto max-w-360 px-6 text-center lg:px-20 md:mt-10">
+      <h1 class="font-work-sans text-3xl font-bold leading-tight text-fci-blue md:text-[49px]">
         Hacemos de la
       </h1>
-      <h2 class="font-work-sans text-[72px] font-black uppercase text-fci-blue md:text-[120px] lg:text-[185.55px]">
+      <h2 class="font-work-sans text-5xl font-black uppercase leading-none text-fci-blue md:text-[80px] lg:text-[185.55px]">
         democracia
       </h2>
-      <p class="font-work-sans text-[28px] font-bold text-fci-blue md:text-[49px]">
+      <p class="font-work-sans text-xl font-bold leading-tight text-fci-blue md:text-[32px] lg:text-[49px]">
         una experiencia compartida, justa y transformadora
       </p>
     </div>
   </section>
 
   <!-- Sección Azul con mapa de América Latina -->
-  <section class="relative h-[512px] overflow-hidden bg-fci-blue">
+  <section class="relative h-auto min-h-80 overflow-hidden bg-fci-blue md:h-128">
     <!-- Mapa de América Latina a la derecha -->
     <img
       src="/images/mapa-latam.svg"
       alt=""
-      class="pointer-events-none absolute right-0 top-0 h-[807px] w-[805px] opacity-30"
+      class="pointer-events-none absolute right-0 top-0 h-201.75 w-201.25 opacity-30"
     />
 
-    <div class="relative mx-auto flex h-full max-w-[1440px] flex-col justify-center px-6 lg:px-20">
-      <div class="max-w-[828px]">
-        <p class="font-work-sans text-[30px] font-normal leading-[41px] text-white">
+    <div class="relative mx-auto flex h-full max-w-360 flex-col justify-center px-6 lg:px-20">
+      <div class="max-w-207">
+        <p class="font-work-sans text-base font-normal leading-relaxed text-white md:text-xl md:leading-8 lg:text-[30px] lg:leading-10.25">
           Trabajamos en América Latina y el Caribe desarrollando herramientas y estrategias para fortalecer <strong class="font-extrabold text-fci-green">la participación ciudadana, la transparencia y la incidencia pública</strong>.
         </p>
 
         <div class="mt-12">
           <a
             href="/nosotros"
-            class="inline-flex h-[42px] w-[134px] items-center justify-center rounded-full bg-white font-work-sans text-base font-extrabold uppercase text-fci-blue transition-colors hover:bg-gray-100"
+            class="inline-flex h-10.5 w-33.5 items-center justify-center rounded-full bg-white font-work-sans text-base font-extrabold uppercase text-fci-blue transition-colors hover:bg-gray-100"
           >
             Nosotros
           </a>
@@ -58,29 +58,29 @@ import noticia2025 from '../assets/images/noticia-2025.webp';
 
   <!-- Sección Proyectos -->
   <section class="bg-white">
-    <div class="mx-auto max-w-[1440px] px-6 py-20 lg:px-20">
-      <h2 class="mb-10 text-center font-work-sans text-[32px] font-extrabold uppercase text-fci-blue md:text-[40px]">
+    <div class="mx-auto max-w-360 px-6 py-12 md:py-20 lg:px-20">
+      <h2 class="mb-6 text-center font-work-sans text-2xl font-extrabold uppercase text-fci-blue md:text-[40px] md:mb-10">
         nuestros proyectos
       </h2>
 
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <a href="/proyectos/colectiva" class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-[#373737] p-6 transition-transform hover:scale-[1.02]">
+        <a href="/proyectos/colectiva" class="group relative flex min-h-48 items-end overflow-hidden rounded-lg bg-[#373737] p-4 sm:min-h-71.75 sm:p-6 transition-transform hover:scale-[1.02]">
           <div class="relative z-10">
-            <h3 class="font-work-sans text-[32px] font-bold text-white">Colectiva</h3>
+            <h3 class="font-work-sans text-2xl font-bold text-white sm:text-[32px]">Colectiva</h3>
           </div>
         </a>
 
-        <article class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-fci-beige p-6 transition-transform hover:scale-[1.02]">
+        <article class="group relative flex min-h-48 items-end overflow-hidden rounded-lg bg-fci-beige p-4 sm:min-h-71.75 sm:p-6 transition-transform hover:scale-[1.02]">
           <div class="relative z-10">
-            <h3 class="font-geologica text-[58px] font-black leading-none text-[#655846]">Ayuda</h3>
-            <h3 class="font-geologica text-[30px] font-black leading-none text-[#D06B28]">Defensores</h3>
+            <h3 class="font-geologica text-3xl font-black leading-none text-[#655846] sm:text-[58px]">Ayuda</h3>
+            <h3 class="font-geologica text-xl font-black leading-none text-[#D06B28] sm:text-[30px]">Defensores</h3>
           </div>
         </article>
 
-        <article class="group relative flex min-h-[287px] items-end overflow-hidden rounded-lg bg-fci-darkblue p-6 transition-transform hover:scale-[1.02]">
+        <article class="group relative flex min-h-48 items-end overflow-hidden rounded-lg bg-fci-darkblue p-4 sm:min-h-71.75 sm:p-6 transition-transform hover:scale-[1.02]">
           <div class="relative z-10">
-            <h3 class="font-space-mono text-[36px] font-bold leading-none text-fci-lightblue">Democracia</h3>
-            <h3 class="font-space-mono text-[36px] font-bold leading-none text-fci-lightblue">Kit</h3>
+            <h3 class="font-space-mono text-xl font-bold leading-none text-fci-lightblue sm:text-[36px]">Democracia</h3>
+            <h3 class="font-space-mono text-xl font-bold leading-none text-fci-lightblue sm:text-[36px]">Kit</h3>
           </div>
         </article>
       </div>
@@ -98,61 +98,61 @@ import noticia2025 from '../assets/images/noticia-2025.webp';
 
   <!-- Sección Novedades -->
   <section class="bg-white">
-    <div class="mx-auto max-w-[1440px] px-6 py-20 lg:px-20">
-      <div class="mb-12 flex flex-col items-center justify-between gap-4 md:flex-row">
+    <div class="mx-auto max-w-360 px-6 py-12 md:py-20 lg:px-20">
+      <div class="mb-8 flex flex-col items-center justify-between gap-4 md:mb-12 md:flex-row">
         <div class="text-center md:text-left">
-          <p class="font-work-sans text-[20px] font-medium uppercase text-fci-blue md:text-[24px]">revisa nuestras</p>
-          <h2 class="font-work-sans text-[32px] font-black uppercase text-fci-blue md:text-[38px]">últimas novedades</h2>
+          <p class="font-work-sans text-base font-medium uppercase text-fci-blue md:text-[20px] lg:text-[24px]">revisa nuestras</p>
+          <h2 class="font-work-sans text-2xl font-black uppercase text-fci-blue md:text-[38px]">últimas novedades</h2>
         </div>
         <a
           href="/novedades"
-          class="inline-flex shrink-0 items-center rounded-full bg-fci-blue px-6 py-3 font-work-sans text-[16px] font-bold uppercase text-white transition-colors hover:bg-fci-darkblue"
+          class="inline-flex shrink-0 items-center rounded-full bg-fci-blue px-4 py-2 text-sm font-bold uppercase text-white transition-colors hover:bg-fci-darkblue md:px-6 md:py-3 md:text-[16px]"
         >
           Ver todas las novedades
         </a>
       </div>
 
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-        <article class="flex flex-col overflow-hidden rounded-[20px] bg-[rgba(0,38,255,0.08)] transition-transform hover:scale-[1.02]">
-          <img src={noticiaEscazu.src} alt="Escazú Barómetro" class="h-[287px] w-full rounded-[10px] object-cover" loading="lazy" />
-          <div class="flex flex-1 flex-col justify-between p-6">
+        <article class="flex flex-col overflow-hidden rounded-xl bg-[rgba(0,38,255,0.08)] transition-transform hover:scale-[1.02]">
+          <img src={noticiaEscazu.src} alt="Escazú Barómetro" class="h-48 w-full rounded-lg object-cover sm:h-71.75" loading="lazy" />
+          <div class="flex flex-1 flex-col justify-between p-4 sm:p-6">
             <div>
-              <span class="inline-block rounded bg-fci-lightblue px-3 py-1 font-work-sans text-[14px] font-medium uppercase tracking-[0.04em] text-fci-blue">actualidad</span>
-              <h3 class="mt-3 font-work-sans text-[20px] font-bold uppercase text-fci-blue">
+              <span class="inline-block rounded bg-fci-lightblue px-2 py-0.5 font-work-sans text-xs font-medium uppercase tracking-[0.04em] text-fci-blue sm:px-3 sm:py-1 sm:text-[14px]">actualidad</span>
+              <h3 class="mt-2 font-work-sans text-base font-bold uppercase text-fci-blue sm:mt-3 sm:text-[20px]">
                 Participamos en el evento paralelo del Foro de los Países de América Latina...
               </h3>
             </div>
-            <a href="/novedades" class="mt-4 inline-block font-work-sans text-[16px] font-bold uppercase text-fci-darkpurple underline hover:no-underline">
+            <a href="/novedades" class="mt-3 inline-block font-work-sans text-sm font-bold uppercase text-fci-darkpurple underline hover:no-underline sm:mt-4 sm:text-[16px]">
               LEER ARTÍCULO
             </a>
           </div>
         </article>
 
-        <article class="flex flex-col overflow-hidden rounded-[20px] bg-[rgba(0,38,255,0.08)] transition-transform hover:scale-[1.02]">
-          <img src={noticiaPenalolen.src} alt="Taller Peñalolén" class="h-[287px] w-full rounded-[10px] object-cover" loading="lazy" />
-          <div class="flex flex-1 flex-col justify-between p-6">
+        <article class="flex flex-col overflow-hidden rounded-xl bg-[rgba(0,38,255,0.08)] transition-transform hover:scale-[1.02]">
+          <img src={noticiaPenalolen.src} alt="Taller Peñalolén" class="h-48 w-full rounded-lg object-cover sm:h-71.75" loading="lazy" />
+          <div class="flex flex-1 flex-col justify-between p-4 sm:p-6">
             <div>
-              <span class="inline-block rounded bg-fci-lightblue px-3 py-1 font-work-sans text-[14px] font-medium uppercase tracking-[0.04em] text-fci-blue">actualidad</span>
-              <h3 class="mt-3 font-work-sans text-[20px] font-bold uppercase text-fci-blue">
+              <span class="inline-block rounded bg-fci-lightblue px-2 py-0.5 font-work-sans text-xs font-medium uppercase tracking-[0.04em] text-fci-blue sm:px-3 sm:py-1 sm:text-[14px]">actualidad</span>
+              <h3 class="mt-2 font-work-sans text-base font-bold uppercase text-fci-blue sm:mt-3 sm:text-[20px]">
                 Realizamos un Piloto de Gobernanza Ambiental Comunitaria en Peñalolén
               </h3>
             </div>
-            <a href="/novedades" class="mt-4 inline-block font-work-sans text-[16px] font-bold uppercase text-fci-darkpurple underline hover:no-underline">
+            <a href="/novedades" class="mt-3 inline-block font-work-sans text-sm font-bold uppercase text-fci-darkpurple underline hover:no-underline sm:mt-4 sm:text-[16px]">
               LEER ARTÍCULO
             </a>
           </div>
         </article>
 
-        <article class="flex flex-col overflow-hidden rounded-[20px] bg-[rgba(0,38,255,0.08)] transition-transform hover:scale-[1.02]">
-          <img src={noticia2025.src} alt="2025 en Ciudadanía Inteligente" class="h-[287px] w-full rounded-[10px] object-cover" loading="lazy" />
-          <div class="flex flex-1 flex-col justify-between p-6">
+        <article class="flex flex-col overflow-hidden rounded-xl bg-[rgba(0,38,255,0.08)] transition-transform hover:scale-[1.02]">
+          <img src={noticia2025.src} alt="2025 en Ciudadanía Inteligente" class="h-48 w-full rounded-lg object-cover sm:h-71.75" loading="lazy" />
+          <div class="flex flex-1 flex-col justify-between p-4 sm:p-6">
             <div>
-              <span class="inline-block rounded bg-fci-lightblue px-3 py-1 font-work-sans text-[14px] font-medium uppercase tracking-[0.04em] text-fci-blue">actualidad</span>
-              <h3 class="mt-3 font-work-sans text-[20px] font-bold uppercase text-fci-blue">
+              <span class="inline-block rounded bg-fci-lightblue px-2 py-0.5 font-work-sans text-xs font-medium uppercase tracking-[0.04em] text-fci-blue sm:px-3 sm:py-1 sm:text-[14px]">actualidad</span>
+              <h3 class="mt-2 font-work-sans text-base font-bold uppercase text-fci-blue sm:mt-3 sm:text-[20px]">
                 2025 en Ciudadanía Inteligente: un año de nuevos desafíos para la...
               </h3>
             </div>
-            <a href="/novedades" class="mt-4 inline-block font-work-sans text-[16px] font-bold uppercase text-fci-darkpurple underline hover:no-underline">
+            <a href="/novedades" class="mt-3 inline-block font-work-sans text-sm font-bold uppercase text-fci-darkpurple underline hover:no-underline sm:mt-4 sm:text-[16px]">
               LEER ARTÍCULO
             </a>
           </div>

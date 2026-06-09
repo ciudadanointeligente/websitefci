@@ -1,6 +1,4 @@
 ---
-import mujerNewsletter from '../assets/images/mujer-newsletter.webp';
-import texturaCodigo from '../assets/images/textura-codigo.webp';
 import logoFlc from '../assets/images/logo-flc.webp';
 import socialCc from '../assets/images/social-cc.webp';
 import socialMedium from '../assets/images/social-medium.webp';
@@ -13,38 +11,21 @@ import socialDace from '../assets/images/social-dace.png';
 
 <footer class="relative overflow-hidden bg-fci-blue text-white">
   <div class="relative">
-    <img
-      src={texturaCodigo.src}
-      alt=""
-      class="pointer-events-none absolute left-0 top-0 h-full w-full max-w-[1275px] object-cover opacity-60"
-      loading="lazy"
-    />
-
-    <div class="relative mx-auto max-w-[1440px] px-6 py-16 lg:px-20">
-      <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-        <div class="relative hidden lg:block">
-          <div class="absolute bottom-0 left-0 h-[301px] w-[314px]" style="background: linear-gradient(180deg, #0026FF 46%, rgba(0, 38, 255, 0) 97%);"></div>
-          <img
-            src={mujerNewsletter.src}
-            alt=""
-            class="relative z-10 ml-auto h-[399px] w-auto object-cover"
-            loading="lazy"
-          />
-        </div>
-
-        <div class="flex flex-col items-center gap-6 lg:items-start">
-          <h3 class="text-center font-work-sans text-[28px] font-bold lg:text-left">
-            Súmate a nuestro Newsletter
-          </h3>
-          <div class="relative w-full">
+    <div class="relative mx-auto max-w-360 px-6 py-16 lg:px-20">
+      <div class="flex flex-col items-center gap-6">
+        <h3 class="text-center font-work-sans text-[28px] font-bold lg:text-left">
+          Súmate a nuestro Newsletter
+        </h3>
+        <div class="flex w-full flex-col gap-4 sm:flex-row lg:justify-start">
+          <div class="w-full rounded-[10px] bg-white px-4.5 py-2.75 sm:w-130.25">
             <input
               type="email"
               placeholder="Escribe tu correo aquí"
-              class="w-full rounded-[10px] bg-white px-[18px] py-[11px] font-work-sans text-[20px] text-[#373737] placeholder:text-[#373737] sm:w-[521px] lg:w-[805px]"
+              class="w-full bg-transparent font-work-sans text-[20px] text-[#373737] placeholder:text-[#373737] outline-none"
             />
           </div>
           <button
-            class="rounded-full bg-white px-[25px] py-[12px] font-work-sans text-[18.8px] font-bold uppercase text-fci-blue transition-colors hover:bg-gray-100"
+            class="flex h-13 shrink-0 items-center justify-center rounded-full bg-white px-10.75 font-work-sans text-[18.8px] font-bold uppercase text-fci-blue transition-colors hover:bg-gray-100"
           >
             suscribete
           </button>
@@ -54,56 +35,30 @@ import socialDace from '../assets/images/social-dace.png';
   </div>
 
   <div class="bg-black shadow-[inset_0px_4px_4px_0px_rgba(0,0,0,0.25)]">
-    <div class="mx-auto max-w-[1440px] px-6 py-10 lg:px-20">
+    <div class="mx-auto max-w-360 px-6 py-10 lg:px-20">
       <div class="mb-6 flex flex-col items-center justify-between gap-6 border-b border-white/20 pb-6 lg:flex-row">
-        <svg width="386" height="28" viewBox="0 0 386 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-7 w-auto" aria-label="Ciudadanía Inteligente">
-          <path d="M14 0H5.6V7.45H10.1333V14.95H14V0Z" fill="white"/>
-          <path d="M20.8 0H17.7333V14.95H20.8V9.53333H22.068V5.91667H25.934V9.53333H27.201V14.95H30.267V0H25.934V2.11667H22.068V0H20.8Z" fill="white"/>
-          <path d="M40 14.95L35.3333 0H38.6667L41.3333 8.78333L44 0H47.3333L42.6667 14.95H40Z" fill="white"/>
-          <path d="M50 14.95L45.3333 0H48.6667L51.3333 8.78333L54 0H57.3333L52.6667 14.95H50Z" fill="white"/>
-          <path d="M56 14.95V0H65.52V5.73333H58.6667V6.11667H63.7067V14.95H56Z" fill="white"/>
-          <path d="M77.6133 14.95V7.96667H76.3467V4.33333H72.48V7.96667H71.2133V14.95H68.0933V0H72.48V2.11667H76.3467V0H80.7333V14.95H77.6133Z" fill="white"/>
-          <path d="M93.0533 14.95V0H95.72V3.63333H97.5333V0H100.2V14.95H97.5333V9.61667H95.72V14.95H93.0533Z" fill="white"/>
-          <path d="M85.3333 14.95V0H88V3.63333H89.8133V0H92.48V14.95H89.8133V9.61667H88V14.95H85.3333Z" fill="white"/>
-          <path d="M117.334 14.95V0H120.001V3.63333H121.814V0H124.481V14.95H121.814V9.61667H120.001V14.95H117.334Z" fill="white"/>
-          <path d="M109.614 14.95V0H112.281V3.63333H114.094V0H116.761V14.95H114.094V9.61667H112.281V14.95H109.614Z" fill="white"/>
-          <path d="M134 26.5H128.533V14.95H134V26.5Z" fill="white"/>
-          <path d="M148.667 14.95L143.333 26.5H138.933L134 14.95H138.4L141.133 21.9167L143.867 14.95H148.667Z" fill="white"/>
-          <path d="M152.667 26.5L165.333 14.95H170.667L183.333 26.5H178.667L175.467 22.8833H160.533L157.333 26.5H152.667ZM162.133 19.2667H173.867L168 12.3L162.133 19.2667Z" fill="white"/>
-          <path d="M195.333 14.95H190.267V26.5H195.333V14.95Z" fill="white"/>
-          <path d="M204 14.95H198.667V26.5H204V21.9167H212.533V26.5H217.867V14.95H212.533V18.6833H204V14.95Z" fill="white"/>
-          <path d="M236.8 14.95V26.5H231.733V21.3333H226.667V14.95H236.8Z" fill="white"/>
-          <path d="M241.6 14.95H251.733V17.6H246.667V19.2667H251.733V21.9167H246.667V23.85H251.733V26.5H241.6V14.95Z" fill="white"/>
-          <path d="M256.533 26.5V14.95H261.6V23.85H268.8V26.5H256.533Z" fill="white"/>
-          <path d="M275.2 26.5V14.95H280.267V21.3333H288.8V26.5H275.2Z" fill="white"/>
-          <path d="M293.6 14.95H303.733V17.6H298.667V19.2667H303.733V21.9167H298.667V23.85H303.733V26.5H293.6V14.95Z" fill="white"/>
-          <path d="M320 14.95H314.667V26.5H320V21.9167H328.533V26.5H333.867V14.95H328.533V18.6833H320V14.95Z" fill="white"/>
-          <path d="M342.533 14.95H337.467V26.5H342.533V14.95Z" fill="white"/>
-          <path d="M349.867 26.5L362.533 14.95H367.867L380.533 26.5H375.867L372.667 22.8833H357.733L354.533 26.5H349.867ZM359.333 19.2667H371.067L365.2 12.3L359.333 19.2667Z" fill="white"/>
-          <path d="M384.533 14.95H386V26.5H384.533V14.95Z" fill="white"/>
-        </svg>
 
         <div class="flex gap-3" aria-label="Redes sociales">
           <a href="#" aria-label="Creative Commons" class="flex h-11 w-11 items-center justify-center rounded-full border border-white hover:bg-white/20">
-            <img src={socialCc.src} alt="CC" class="h-[31px] w-[30px]" loading="lazy" />
+            <img src={socialCc.src} alt="CC" class="h-7.75 w-7.5" loading="lazy" />
           </a>
           <a href="#" aria-label="Medium" class="flex h-11 w-11 items-center justify-center rounded-full border border-white hover:bg-white/20">
-            <img src={socialMedium.src} alt="Medium" class="h-[30px] w-[30px]" loading="lazy" />
+            <img src={socialMedium.src} alt="Medium" class="h-7.5 w-7.5" loading="lazy" />
           </a>
           <a href="#" aria-label="GitLab" class="flex h-11 w-11 items-center justify-center rounded-full border border-white hover:bg-white/20">
-            <img src={socialGitlab.src} alt="GitLab" class="h-[30px] w-[30px]" loading="lazy" />
+            <img src={socialGitlab.src} alt="GitLab" class="h-7.5 w-7.5" loading="lazy" />
           </a>
           <a href="#" aria-label="YouTube" class="flex h-11 w-11 items-center justify-center rounded-full border border-white hover:bg-white/20">
-            <img src={socialYoutube.src} alt="YouTube" class="h-[27px] w-[30px]" loading="lazy" />
+            <img src={socialYoutube.src} alt="YouTube" class="h-6.75 w-7.5" loading="lazy" />
           </a>
           <a href="#" aria-label="Twitter / X" class="flex h-11 w-11 items-center justify-center rounded-full border border-white hover:bg-white/20">
-            <img src={socialTwitter.src} alt="Twitter" class="h-[30px] w-[30px]" loading="lazy" />
+            <img src={socialTwitter.src} alt="Twitter" class="h-7.5 w-7.5" loading="lazy" />
           </a>
           <a href="#" aria-label="Instagram" class="flex h-11 w-11 items-center justify-center rounded-full border border-white hover:bg-white/20">
-            <img src={socialInstagram.src} alt="Instagram" class="h-[34px] w-[30px]" loading="lazy" />
+            <img src={socialInstagram.src} alt="Instagram" class="h-8.5 w-7.5" loading="lazy" />
           </a>
           <a href="#" aria-label="Dace" class="flex h-11 w-11 items-center justify-center rounded-full border border-white hover:bg-white/20">
-            <img src={socialDace.src} alt="Dace" class="h-[30px] w-[30px]" loading="lazy" />
+            <img src={socialDace.src} alt="Dace" class="h-7.5 w-7.5" loading="lazy" />
           </a>
         </div>
       </div>
